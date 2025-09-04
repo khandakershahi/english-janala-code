@@ -1,0 +1,150 @@
+*{
+     font-family: 'Poppins', sans-serif;
+}
+
+.font-bangla{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/* Hero */
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.popup-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.lesson-des-bn {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 34.3125px;
+}
+
+/* Cards */
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.card-des {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.card-lead {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Popup */
+.popup-lead {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.popup-des {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.popup-synonym {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Hero Lead */
+.hero-lead {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* Logo */
+.logo-en {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo-bn {
+  font-family: 'Tiro Bangla', serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Footer */
+.footer-des {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-credit {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* FAQ */
+.faq-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.faq-des {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Links */
+.link-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-input {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Lesson EN */
+.lesson-des-en {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+  font-size: 13.375px;
+}
+
+/* Font Awesome */
+.fa5b {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.link-icon-fa5f {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; /* Solid */
+  font-size: 14px;
+}
