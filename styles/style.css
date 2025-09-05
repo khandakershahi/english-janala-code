@@ -6,7 +6,10 @@
     font-family: 'Hind Siliguri', sans-serif;
 }
 
-
+.active{
+  color: white;
+  background-color: var(--color-primary);
+}
 /* Hero */
 .hero-title {
   font-family: 'Poppins', sans-serif;
