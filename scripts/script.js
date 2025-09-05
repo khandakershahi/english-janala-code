@@ -3,6 +3,14 @@ const createElements = (arr) => {
     return htmlElements.join(' ');
 };
 
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
+
+
 const manageSpinner = (status) => {
   if(status == true){
     document.getElementById('spinner').classList.remove('hidden');
@@ -32,7 +40,7 @@ const removeActive = () => {
 const loadLevelWord = (id) => {
   manageSpinner(true);
   const url = `https://openapi.programming-hero.com/api/level/${id}`;
-  
+
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -135,7 +143,7 @@ const displayLevelWord = (words) => {
             <div class="text-2xl font-semibold font-bangla">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / ${word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যায়নি"}"</div>
             <div class="flex justify-between items-center">
               <button onclick="loadWordDetail(${word.id})" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80] "><i class="fas fa-info-circle"></i></button>
-              <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]"><i class="fa-solid fa-volume-high"></i></button>
+              <button onclick="pronounceWord('${word.word}')" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]"><i class="fa-solid fa-volume-high"></i></button>
               
             </div>
           </div>
@@ -169,3 +177,22 @@ const displayLesson = (lessons) => {
 
 
 loadLesson();
+
+
+document.getElementById('btn-search').addEventListener('click', () => {
+  removeActive();
+  const input = document.getElementById('input-search');
+  const searchValue = input.value.trim().toLowerCase();
+  
+  fetch("https://openapi.programming-hero.com/api/words/all")
+  .then((res) => res.json())
+  .then((data)=> {
+    const allWords = data.data;
+    console.log(allWords);
+    const filterWords = allWords.filter((word) => 
+      word.word.toLowerCase().includes(searchValue) 
+  );
+displayLevelWord(filterWords);
+  });
+  
+})
